@@ -20,10 +20,10 @@ public class ServiceProvider {
     @JoinColumn
     private List<User> users = new ArrayList<>();
 
-    @OneToMany(mappedBy = "serviceProvide", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "serviceProvider", cascade = CascadeType.ALL)
     private List<Connection> connectionList = new ArrayList<>();
 
-    @OneToMany(mappedBy = "serviceProvide", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "serviceProvider", cascade = CascadeType.ALL)
     private List<Country> countryList = new ArrayList<>();
 
     public ServiceProvider() {
