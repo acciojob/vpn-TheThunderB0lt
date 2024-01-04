@@ -20,7 +20,9 @@ public class Country {
     @JoinColumn
     private ServiceProvider serviceProvider;
 
-    public Country() {
+    public Country(CountryName countryName, String code) {
+        this.countryName = countryName;
+        this.code = code;
     }
 
     public Country(int id, CountryName countryName, String code, User user, ServiceProvider serviceProvider) {
